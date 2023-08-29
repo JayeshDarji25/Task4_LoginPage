@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantum Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <img src="/images/logo-header.svg" id="header-logo" />
+    </div>
+    <div id="container">
+      <div id="top">
+        <img src="/images/back.svg" />
+        <h3>Log in with Quantum</h3>
+      </div>
+      <form id="form">
+        <div class="radio-group">
+          <input type="radio" name="option" id="district" />
+          <label for="district" style="margin-right: 50px">District</label>
+          <input type="radio" name="option" id="inde" />
+          <label for="inde">Independent school</label>
+        </div>
+        <br />
+        <label for="state" class="small">State*</label><br />
+        <select id="state" class="inp">
+          <option>Alabama</option>
+          <option>UP</option></select
+        ><br />
+        <label for="state" class="small">District*</label><br />
+        <select id="state" class="inp">
+          <option>Alabama School District</option>
+          <option>Kandivali Eduction Trust</option></select
+        ><br />
+        <input placeholder="Username/Email ID*" class="uname" />
+        <p class="forgot">FORGOT USERNAME?</p>
+        <div style="display: flex">
+          <input
+            type="password"
+            placeholder="Password*"
+            id="pass"
+            class="uname"
+          />
+          <img
+            id="eye"
+            src="/images/eye.svg"
+            style="
+              border-bottom: 1px solid rgb(213, 212, 212);
+              padding-bottom: 2px;
+              cursor: pointer;
+            "
+            onclick="myfunc()"
+          />
+        </div>
+        <p class="forgot">FORGOT PASSWORD?</p>
+        <div class="remember">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember Me</label><br />
+        </div>
+        <div class="btn">
+          <button>LOG IN</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="totalfooter">
+      <p class="msg">About <span></span> Contact Us</p>
+      <div class="footer">
+        <img src="images/footer-logo.svg" />
+        <span></span>
+        <p>
+          Copyright &copy; 2020-2021 <strong>Zeus Systems Pvt. Ltd.</strong> All
+          rights reserved.
+        </p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
